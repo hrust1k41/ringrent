@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ring Rent: оренда спортивних автомобілів для заїздів на Нюрбургрінгу (навчальний проєкт).">
+  <title>Ring Rent — оренда спорткарів на Нюрбургрінгу</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header header--alt">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Ring<span class="header__logo-accent">Rent</span></a>
+      <button class="header__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="header-tools">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+      <div class="header__tools" id="header-tools">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__link--current" href="index.html">Головна</a></li>
+            <li><a class="nav__link" href="cars.html">Автопарк</a></li>
+            <li><a class="nav__link" href="track.html">Траса</a></li>
+            <li><a class="nav__link nav__link--button" href="booking.html">Забронювати</a></li>
+          </ul>
+        </nav>
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Пошук на сторінці" aria-label="Пошук тексту">
+          <button class="search__button" type="submit">Знайти</button>
+          <button class="search__button search__button--clear" type="button" aria-label="Очистити пошук">×</button>
+          <span class="search__result" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner__inner">
+        <h1 class="banner__title">Ring<span class="banner__title-accent">Rent</span></h1>
+        <p class="banner__text">Оренда спортивних автомобілів для заїздів на легендарній Нордшляйфе Нюрбургрінгу.</p>
+        <div class="banner__actions">
+          <a class="button button--primary" href="cars.html">Обрати авто</a>
+          <a class="button" href="#about">Дізнатися більше</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro container" id="about">
+      <span class="intro__icon">🏁</span>
+      <h2 class="intro__title">Проїдьте «Зелене пекло» за кермом спорткара</h2>
+      <p class="intro__text">Нордшляйфе — північна петля Нюрбургрінгу довжиною близько 20,8 км із понад сімдесятьма поворотами. Її прозвали «Зеленим пеклом», і щороку тисячі водіїв мріють пройти її самі. Ми допоможемо: підберемо авто, проведемо інструктаж і організуємо ваш заїзд.</p>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Чому Ring Rent</h2>
+        <p class="section__lead">Усе, що потрібно для безпечного й запам’ятовуваного заїзду.</p>
+        <div class="grid grid--3">
+          <article class="feature">
+            <span class="feature__icon">🔧</span>
+            <h3 class="feature__title">Підготовлені автомобілі</h3>
+            <p class="feature__text">Кожен спорткар проходить технічний огляд перед виїздом на трасу: гальма, шини, рідини.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">🛡️</span>
+            <h3 class="feature__title">Інструктаж і безпека</h3>
+            <p class="feature__text">Перед заїздом розбираємо маршрут, прапори, правила обгону та дії у позаштатних ситуаціях.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">📅</span>
+            <h3 class="feature__title">Зручне бронювання</h3>
+            <p class="feature__text">Оберіть авто, дату й кількість кіл в онлайн-формі. Ми підтвердимо заявку протягом доби.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Популярні автомобілі</h2>
+        <p class="section__lead">Три найпопулярніші моделі нашого автопарку.</p>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__media">🏎️<img class="card__photo" src="images/porsche-911-gt3.jpg" alt="Porsche 911 GT3" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Porsche 911 GT3</h3>
+              <p class="card__meta">≈ 510 к.с. · задній привід</p>
+              <p class="card__text">Еталон точного керування. Атмосферний мотор і чіткий відгук на кермо роблять його ідеальним для Нордшляйфе.</p>
+              <div class="card__footer">
+                <span class="card__price">від 450 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=gt3">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--blue">🚘<img class="card__photo" src="images/bmw-m4.jpg" alt="BMW M4 Competition" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">BMW M4 Competition</h3>
+              <p class="card__meta">≈ 510 к.с. · задній привід</p>
+              <p class="card__text">Потужне купе з агресивним характером і зрозумілою поведінкою на межі зчеплення.</p>
+              <div class="card__footer">
+                <span class="card__price">від 380 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=m4">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--red">🚗<img class="card__photo" src="images/toyota-gr-yaris.jpg" alt="Toyota GR Yaris" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Toyota GR Yaris</h3>
+              <p class="card__meta">≈ 260 к.с. · повний привід</p>
+              <p class="card__text">Компактний і доступний варіант для першого знайомства з трасою. Легко пробачає помилки.</p>
+              <div class="card__footer">
+                <span class="card__price">від 190 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=yaris">Забронювати</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Як це працює</h2>
+        <p class="section__lead">Чотири кроки від заявки до фінішу.</p>
+        <div class="grid grid--4">
+          <div class="step">
+            <span class="step__number">1</span>
+            <h3 class="step__title">Оберіть авто</h3>
+            <p class="step__text">Перегляньте автопарк і виберіть модель під свій досвід.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">2</span>
+            <h3 class="step__title">Подайте заявку</h3>
+            <p class="step__text">Заповніть форму бронювання з датою та кількістю кіл.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">3</span>
+            <h3 class="step__title">Пройдіть інструктаж</h3>
+            <p class="step__text">Інструктор розповість про трасу та правила безпеки.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">4</span>
+            <h3 class="step__title">Виїжджайте на трасу</h3>
+            <p class="step__text">Пройдіть Нордшляйфе й заберіть незабутні враження.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta">
+    <h2 class="cta__title">Готові до заїзду?</h2>
+    <p class="cta__text">Залиште заявку, і ми підберемо автомобіль та зручну дату.</p>
+    <a class="button button--primary" href="booking.html">Забронювати заїзд</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">Головна</a>
+      <a class="footer__link" href="cars.html">Автопарк</a>
+      <a class="footer__link" href="track.html">Траса</a>
+      <a class="footer__link" href="booking.html">Бронювання</a>
+    </div>
+    <p class="footer__text">© 2026 Ring Rent.</p>
+    <p class="footer__text">Дизайн-основа: <a class="footer__link" href="http://html5up.net">Twenty by HTML5 UP</a> (CCA 3.0), змінено.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
