@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Про Нордшляйфе Нюрбургрінгу: історія, особливості траси, правила безпеки та тарифи.">
+  <title>Траса — Ring Rent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Ring<span class="header__logo-accent">Rent</span></a>
+      <button class="header__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="header-tools">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+      <div class="header__tools" id="header-tools">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Головна</a></li>
+            <li><a class="nav__link" href="cars.html">Автопарк</a></li>
+            <li><a class="nav__link nav__link--current" href="track.html">Траса</a></li>
+            <li><a class="nav__link nav__link--button" href="booking.html">Забронювати</a></li>
+          </ul>
+        </nav>
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Пошук на сторінці" aria-label="Пошук тексту">
+          <button class="search__button" type="submit">Знайти</button>
+          <button class="search__button search__button--clear" type="button" aria-label="Очистити пошук">×</button>
+          <span class="search__result" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner page-banner--track">
+      <div class="container page-banner__inner">
+        <h1 class="page-banner__title">Нордшляйфе Нюрбургрінгу</h1>
+        <p class="page-banner__text">Найвідоміша траса світу, що проходить крізь ліси німецького регіону Ейфель. Дізнайтеся про її історію, особливості та правила безпеки.</p>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="layout">
+          <div class="article">
+            <div class="article__banner">🏁<img class="article__photo" src="images/track.jpg" alt="Нордшляйфе Нюрбургрінгу" loading="lazy"></div>
+            <h2 class="article__title">Історія та характеристики</h2>
+            <p class="article__text">Нордшляйфе відкрили в 1927 році як частину комплексу Нюрбургрінг. Довжина північної петлі становить близько 20,8 км, а кількість поворотів перевищує сімдесят. Перепад висот на колі значний, а покриття й ухили постійно змінюються.</p>
+            <p class="article__text">Трасу прозвали «Зеленим пеклом» за густі ліси навколо та складність проходження. Саме тут автовиробники тестують нові моделі й змагаються за рекордні часи кола.</p>
+
+            <h2 class="article__title">Чому її вважають складною</h2>
+            <ul class="article__list">
+              <li class="article__list-item">Багато сліпих поворотів і підйомів, де не видно траєкторії далі.</li>
+              <li class="article__list-item">Мінливе покриття та різні рівні зчеплення на різних ділянках.</li>
+              <li class="article__list-item">Невеликі зони безпеки в порівнянні із сучасними кільцевими трасами.</li>
+              <li class="article__list-item">Змішаний рух: на відкритих сесіях на трасі одночасно їдуть різні авто.</li>
+            </ul>
+
+            <h2 class="article__title">Формати заїздів</h2>
+            <p class="article__text">Відкриті (туристичні) сесії проходять у режимі односторонньої дороги загального користування, де діють правила дорожнього руху. Окремо трапляються закриті трек-дні для груп. Актуальний розклад завжди перевіряйте на офіційному сайті траси.</p>
+          </div>
+
+          <aside class="sidebar">
+            <div class="sidebar__block">
+              <h3 class="sidebar__title">Схема траси</h3>
+              <figure class="figure">
+                <img class="figure__image" src="images/track-map.png" alt="Схема траси Нюрбургрінг" loading="lazy">
+                <figcaption class="figure__caption">Контур комплексу Нюрбургрінг: велика північна петля це Нордшляйфе.</figcaption>
+              </figure>
+            </div>
+            <div class="sidebar__block">
+              <h3 class="sidebar__title">Правила безпеки</h3>
+              <ul class="sidebar__list">
+                <li class="sidebar__list-item">Обов’язкові шолом і пристебнуті паски.</li>
+                <li class="sidebar__list-item">Дотримуйтеся дистанції та пропускайте швидших.</li>
+                <li class="sidebar__list-item">Не виїжджайте на трасу без інструктажу.</li>
+                <li class="sidebar__list-item">Заборонено перебувати за кермом у стані сп’яніння.</li>
+                <li class="sidebar__list-item">Слухайтеся прапорів і вказівок маршалів.</li>
+              </ul>
+            </div>
+            <div class="sidebar__block">
+              <h3 class="sidebar__title">Тарифи</h3>
+              <ul class="sidebar__list">
+                <li class="sidebar__list-item">Початківець: від 190 € / заїзд</li>
+                <li class="sidebar__list-item">Середній рівень: від 380 € / заїзд</li>
+                <li class="sidebar__list-item">Досвідчений: від 450 € / заїзд</li>
+                <li class="sidebar__list-item">Інструктаж: безкоштовно</li>
+              </ul>
+              <a class="button button--primary button--small" href="booking.html">Забронювати</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Режими заїзду</h2>
+        <p class="section__lead">Оберіть формат, який відповідає вашому досвіду.</p>
+        <div class="grid grid--3">
+          <article class="feature">
+            <span class="feature__icon">🚦</span>
+            <h3 class="feature__title">Відкрита сесія</h3>
+            <p class="feature__text">Заїзд у загальному потоці. Підійде тим, хто хоче відчути трасу без поспіху.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">👨‍🏫</span>
+            <h3 class="feature__title">З інструктором</h3>
+            <p class="feature__text">Досвідчений пілот сидить поруч і підказує траєкторії та точки гальмування.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">👥</span>
+            <h3 class="feature__title">Груповий день</h3>
+            <p class="feature__text">Заїзд для компанії друзів чи колег на кількох автомобілях.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta">
+    <h2 class="cta__title">Хочете пройти Нордшляйфе?</h2>
+    <p class="cta__text">Залиште заявку, і ми підберемо автомобіль та формат заїзду.</p>
+    <a class="button button--primary" href="booking.html">Забронювати заїзд</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">Головна</a>
+      <a class="footer__link" href="cars.html">Автопарк</a>
+      <a class="footer__link" href="track.html">Траса</a>
+      <a class="footer__link" href="booking.html">Бронювання</a>
+    </div>
+    <p class="footer__text">© 2026 Ring Rent.</p>
+    <p class="footer__text">Дизайн-основа: <a class="footer__link" href="http://html5up.net">Twenty by HTML5 UP</a> (CCA 3.0), змінено.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

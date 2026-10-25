@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Автопарк Ring Rent: спортивні автомобілі для оренди на заїзд по Нордшляйфе.">
+  <title>Автопарк — Ring Rent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Ring<span class="header__logo-accent">Rent</span></a>
+      <button class="header__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="header-tools">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+      <div class="header__tools" id="header-tools">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Головна</a></li>
+            <li><a class="nav__link nav__link--current" href="cars.html">Автопарк</a></li>
+            <li><a class="nav__link" href="track.html">Траса</a></li>
+            <li><a class="nav__link nav__link--button" href="booking.html">Забронювати</a></li>
+          </ul>
+        </nav>
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Пошук на сторінці" aria-label="Пошук тексту">
+          <button class="search__button" type="submit">Знайти</button>
+          <button class="search__button search__button--clear" type="button" aria-label="Очистити пошук">×</button>
+          <span class="search__result" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner page-banner--cars">
+      <div class="container page-banner__inner">
+        <h1 class="page-banner__title">Наш автопарк</h1>
+        <p class="page-banner__text">Від доступного повнопривідного хетчбека до суперкара. Оберіть автомобіль під свій досвід і бюджет.</p>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Доступні моделі</h2>
+        <p class="section__lead">Ціна вказана за один заїзд (одне коло Нордшляйфе).</p>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__media">🏎️<img class="card__photo" src="images/porsche-911-gt3.jpg" alt="Porsche 911 GT3" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Porsche 911 GT3</h3>
+              <p class="card__meta">≈ 510 к.с. · задній привід · 2 місця</p>
+              <p class="card__text">Атмосферний мотор, точне кермо й відмінна стабільність. Для досвідчених водіїв.</p>
+              <div class="card__footer">
+                <span class="card__price">450 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=gt3">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--blue">🚘<img class="card__photo" src="images/bmw-m4.jpg" alt="BMW M4 Competition" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">BMW M4 Competition</h3>
+              <p class="card__meta">≈ 510 к.с. · задній привід · 4 місця</p>
+              <p class="card__text">Потужне купе з яскравим характером. Хороший баланс комфорту та спортивності.</p>
+              <div class="card__footer">
+                <span class="card__price">380 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=m4">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--grey">🏎️<img class="card__photo" src="images/audi-r8.jpg" alt="Audi R8 V10" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Audi R8 V10</h3>
+              <p class="card__meta">≈ 570 к.с. · повний привід · 2 місця</p>
+              <p class="card__text">Середньомоторний суперкар із V10 і впевненою тягою на виході з поворотів.</p>
+              <div class="card__footer">
+                <span class="card__price">520 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=r8">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--red">🚗<img class="card__photo" src="images/mercedes-amg-gt.jpg" alt="Mercedes-AMG GT" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Mercedes-AMG GT</h3>
+              <p class="card__meta">≈ 520 к.с. · задній привід · 2 місця</p>
+              <p class="card__text">Довгий капот, гучний V8 та емоційна поведінка на трасі.</p>
+              <div class="card__footer">
+                <span class="card__price">480 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=amg">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media card__media--blue">🚙<img class="card__photo" src="images/nissan-gt-r.jpg" alt="Nissan GT-R" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Nissan GT-R</h3>
+              <p class="card__meta">≈ 560 к.с. · повний привід · 4 місця</p>
+              <p class="card__text">Легенда з прізвиськом Godzilla. Складна система приводу тримає авто впевнено.</p>
+              <div class="card__footer">
+                <span class="card__price">430 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=gtr">Забронювати</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media">🚗<img class="card__photo" src="images/toyota-gr-yaris.jpg" alt="Toyota GR Yaris" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Toyota GR Yaris</h3>
+              <p class="card__meta">≈ 260 к.с. · повний привід · 4 місця</p>
+              <p class="card__text">Доступний варіант для першого знайомства з трасою. Легкий і слухняний.</p>
+              <div class="card__footer">
+                <span class="card__price">190 € / заїзд</span>
+                <a class="button button--primary button--small" href="booking.html?car=yaris">Забронювати</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Порівняння автомобілів</h2>
+        <p class="section__lead">Основні параметри в одній таблиці.</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__cell table__cell--head">Модель</th>
+                <th class="table__cell table__cell--head">Потужність</th>
+                <th class="table__cell table__cell--head">Привід</th>
+                <th class="table__cell table__cell--head">Рівень водія</th>
+                <th class="table__cell table__cell--head">Ціна за заїзд</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__cell">Porsche 911 GT3</td>
+                <td class="table__cell">≈ 510 к.с.</td>
+                <td class="table__cell">Задній</td>
+                <td class="table__cell">Досвідчений</td>
+                <td class="table__cell">450 €</td>
+              </tr>
+              <tr>
+                <td class="table__cell">BMW M4 Competition</td>
+                <td class="table__cell">≈ 510 к.с.</td>
+                <td class="table__cell">Задній</td>
+                <td class="table__cell">Середній</td>
+                <td class="table__cell">380 €</td>
+              </tr>
+              <tr>
+                <td class="table__cell">Audi R8 V10</td>
+                <td class="table__cell">≈ 570 к.с.</td>
+                <td class="table__cell">Повний</td>
+                <td class="table__cell">Середній</td>
+                <td class="table__cell">520 €</td>
+              </tr>
+              <tr>
+                <td class="table__cell">Mercedes-AMG GT</td>
+                <td class="table__cell">≈ 520 к.с.</td>
+                <td class="table__cell">Задній</td>
+                <td class="table__cell">Досвідчений</td>
+                <td class="table__cell">480 €</td>
+              </tr>
+              <tr>
+                <td class="table__cell">Nissan GT-R</td>
+                <td class="table__cell">≈ 560 к.с.</td>
+                <td class="table__cell">Повний</td>
+                <td class="table__cell">Середній</td>
+                <td class="table__cell">430 €</td>
+              </tr>
+              <tr>
+                <td class="table__cell">Toyota GR Yaris</td>
+                <td class="table__cell">≈ 260 к.с.</td>
+                <td class="table__cell">Повний</td>
+                <td class="table__cell">Початківець</td>
+                <td class="table__cell">190 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta">
+    <h2 class="cta__title">Обрали автомобіль?</h2>
+    <p class="cta__text">Залишайте заявку, і ми зарезервуємо його на ваш день.</p>
+    <a class="button button--primary" href="booking.html">Перейти до бронювання</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">Головна</a>
+      <a class="footer__link" href="cars.html">Автопарк</a>
+      <a class="footer__link" href="track.html">Траса</a>
+      <a class="footer__link" href="booking.html">Бронювання</a>
+    </div>
+    <p class="footer__text">© 2026 Ring Rent.</p>
+    <p class="footer__text">Дизайн-основа: <a class="footer__link" href="http://html5up.net">Twenty by HTML5 UP</a> (CCA 3.0), змінено.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

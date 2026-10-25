@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Онлайн-бронювання заїзду на спортивному авто по Нордшляйфе.">
+  <title>Бронювання — Ring Rent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Ring<span class="header__logo-accent">Rent</span></a>
+      <button class="header__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="header-tools">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+      <div class="header__tools" id="header-tools">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Головна</a></li>
+            <li><a class="nav__link" href="cars.html">Автопарк</a></li>
+            <li><a class="nav__link" href="track.html">Траса</a></li>
+            <li><a class="nav__link nav__link--button nav__link--current" href="booking.html">Забронювати</a></li>
+          </ul>
+        </nav>
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Пошук на сторінці" aria-label="Пошук тексту">
+          <button class="search__button" type="submit">Знайти</button>
+          <button class="search__button search__button--clear" type="button" aria-label="Очистити пошук">×</button>
+          <span class="search__result" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner page-banner--booking">
+      <div class="container page-banner__inner">
+        <h1 class="page-banner__title">Бронювання заїзду</h1>
+        <p class="page-banner__text">Заповніть форму, і ми зв’яжемося з вами протягом доби для підтвердження дати та умов.</p>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container container--narrow">
+        <form class="form" action="#" method="post" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Ім’я</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Іван" required minlength="2" maxlength="50" pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'’\- ]+">
+              <span class="form__error"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="name@mail.com" required>
+              <span class="form__error"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+380501234567" required pattern="\+380[0-9]{9}">
+              <span class="form__error"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="car">Автомобіль</label>
+              <select class="form__input" id="car" name="car" required>
+                <option value="">— Оберіть авто —</option>
+                <option value="gt3">Porsche 911 GT3 (450 €)</option>
+                <option value="m4">BMW M4 Competition (380 €)</option>
+                <option value="r8">Audi R8 V10 (520 €)</option>
+                <option value="amg">Mercedes-AMG GT (480 €)</option>
+                <option value="gtr">Nissan GT-R (430 €)</option>
+                <option value="yaris">Toyota GR Yaris (190 €)</option>
+              </select>
+              <span class="form__error"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="date">Дата заїзду</label>
+              <input class="form__input" type="date" id="date" name="date" required>
+              <span class="form__error"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="laps">Кількість кіл (1–5)</label>
+              <input class="form__input" type="number" id="laps" name="laps" min="1" max="5" step="1" value="1" required>
+              <span class="form__error"></span>
+            </div>
+          </div>
+
+          <div class="form__group form__group--full">
+            <label class="form__label" for="message">Коментар (необов’язково)</label>
+            <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="300" placeholder="Ваш досвід, побажання, потреба в інструкторі"></textarea>
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__group form__group--checkbox">
+            <input class="form__checkbox" type="checkbox" id="agree" name="agree" required>
+            <label class="form__label" for="agree">Погоджуюся на обробку персональних даних і з правилами безпеки на трасі</label>
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__actions">
+            <button class="button button--primary" type="submit">Надіслати заявку</button>
+            <button class="button button--dark" type="reset">Очистити</button>
+          </div>
+
+          <p class="form__success form__success--hidden" role="status">Дякуємо! Вашу заявку надіслано, ми зв’яжемося з вами найближчим часом.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Контакти</h2>
+        <p class="section__lead">Є запитання? Зв’яжіться з нами будь-яким зручним способом.</p>
+        <div class="grid grid--3">
+          <article class="feature">
+            <span class="feature__icon">📍</span>
+            <h3 class="feature__title">Адреса</h3>
+            <p class="feature__text">Нюрбург, Німеччина</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">📞</span>
+            <h3 class="feature__title">Телефон</h3>
+            <p class="feature__text">+380 44 000 00 00</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">✉️</span>
+            <h3 class="feature__title">Email</h3>
+            <p class="feature__text">info@ringrent.example</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">Головна</a>
+      <a class="footer__link" href="cars.html">Автопарк</a>
+      <a class="footer__link" href="track.html">Траса</a>
+      <a class="footer__link" href="booking.html">Бронювання</a>
+    </div>
+    <p class="footer__text">© 2026 Ring Rent.</p>
+    <p class="footer__text">Дизайн-основа: <a class="footer__link" href="http://html5up.net">Twenty by HTML5 UP</a> (CCA 3.0), змінено.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
